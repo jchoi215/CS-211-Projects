@@ -1,0 +1,25 @@
+build: max3
+
+max3: max3a.o max3b.o
+	gcc -o max3 max3a.o max3b.o -o max3
+
+max3a.o: max3a.c max3.h
+	gcc -c max3a.c
+
+max3b.o: max3b.c max3.h
+	gcc -c max3b.c
+
+clean:
+	rm max3a.o max3b.o
+
+
+
+
+
+	project.exe : main.obj io.obj
+		tlink c0s main.obj io.obj, project.exe,, cs /Lf:\bc\lib
+	main.obj : main.c
+		bcc –ms –c main.c
+	io.obj : io.c
+		bcc –ms –c io.c
+	main.obj io.obj : incl.h

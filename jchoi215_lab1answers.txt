@@ -1,0 +1,35 @@
+Lab 1 - week 2  8/29/16
+NetID: jchoi215
+
+1) sizeof():
+   myint: 4
+   mychar: 1
+   myptr: 4
+
+   int decimal:
+   myint: 2147493647
+   mychar: 127
+   myptr: 2147483647
+
+   in hex 
+   myint: 7fffffff
+   mychar: 7f
+   myptr: 7fffffff
+
+   added +1 to value: 
+   myint: -2147483648
+   mychar: 
+   myptr: 0x80000000
+
+2) because i overflows, taking up the front most spot making the value 
+   the least value possible
+3) a.out -> compole out to c compiler
+   /.a.out search for path
+4) 1. create hello.out
+   2. creat a.out 
+5) 
+6) | pipe
+   > output
+   < input
+   fg put a process in forground
+   bg put process in background
